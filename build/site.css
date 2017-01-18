@@ -214,7 +214,7 @@ h4{
     }
 
     .nomobile{
-        display: none !important;
+        /*display: none !important;*/
     }
 
     .column p {
