@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css?family=Noticia+Text:400i|Roboto+Slab');
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: #ffffff;
+    margin: 0px 100px;
+    font-size: 16px;
+    font-family: arial, sans-serif;
+}
+
+.pycard{
+    background: white;
+    -webkit-box-shadow: 0px 0px 9px 0px rgba(186,186,186,1);
+    -moz-box-shadow: 0px 0px 9px 0px rgba(186,186,186,1);
+    box-shadow: 0px 0px 9px 0px rgba(186,186,186,1);
+    padding: 20px 60px !important;
+}
+
+.subtitle{
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    color:#ce4d28;
+    font-size: 1.8em;
+}
+
+#embed{
+  height: 70px;
+  min-height: 100px;
+  max-height: 300px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  width: 90%;
+  color: grey;
+  overflow-y: scroll;
+}
+
+a{
+  cursor: pointer;
+  color: #ed4d1f;
+}
+
+h1{
+    margin-top: 36px;
+    font-size: 3em;
+    margin-bottom: 16px;
+    font-weight: bold;
+    font-family: 'Noticia Text', serif;
+    font-style: italic;
+    line-height: 1.2;
+}
+
+h4{
+    font-size: 18px;margin-top: 16px;font-weight: bold;margin-bottom: 8px;
+}
+
+.gray{
+    color: gray;
+    font-size: 14px;
+}
+
+.call-to-action-area{
+  text-align: center;
+  width: 100%;
+
+}
+
+.call-to-action{
+  color: white;
+  font-size: 1.3em;
+  padding: 30px;
+  background: #47A247;
+  display: inline-block;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.75);
+  cursor: pointer;
+  border-radius: 2px;
+  margin-bottom: 20px;
+}
+
+.tip-no{
+  width: 20px;
+  float: left;
+  font-size: 1.2em;
+  padding-top: 3px;
+  margin-right: 5px;
+  font-family: 'Roboto Slab', serif;
+}
+
+.tip-text p{
+  width: 90%;
+  float: left;
+  font-size: 1.2em;
+}
+
+.clear-fix{
+  width: 100%;
+  display: inline-block;
+}
+
+h4{
+  font-size: 1.8em;
+  margin-bottom: 30px;
+  font-family: 'Roboto Slab', serif;
+}
+
+.column p{
+  font-size: 1.2em;
+  font-family: 'Roboto Slab', serif;
+  line-height: 30px;
+}
+
+.make-noice-text{
+  background: #EFFBFF;
+  margin-bottom: 20px;
+  padding: 30px;
+  display: inline-block;
+}
+
+.steps-no{
+  display: inline-block;
+  width: 20%;
+  font-size: 5em;
+  float: left;
+  text-align: right;
+  padding-top: 50px;
+  padding-right: 50px;
+  color: #1DACD6;
+}
+
+.steps-text{
+  width: 80%;
+  font-size: 1em;
+  font-family: 'Roboto Slab', serif;
+  float: left;
+  display: inline-block;
+  margin-bottom: 25px;
+  margin-top: 25px;
+}
+
+.step-text-title{
+  font-size: 1.5em !important;
+ font-family: 'Roboto Slab', serif;
+ color:#333;
+ margin-bottom: 20px;
+}
+
+.make-noice-chart-title{
+  font-size: 1.8em;
+  font-weight: bold;
+  font-family: 'Roboto Slab', serif;
+  margin-bottom: 30px;
+}
+
+.step-text{
+  font-size: 1em !important;
+}
+
+.stackable .column{
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.fb-share-button span {
+  vertical-align: 0px !important;
+}
+
+@media only screen and (max-width: 667px) {
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        /*background: #e9ebee;*/
+        margin: 0px 0px;
+        font-size: 15px;
+        font-family: arial, sans-serif;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    h1{
+      margin-top: 30% !important;
+    }
+
+    .subtitle{
+      font-size: 1.3em !important;
+      padding-left: 30px !important;
+      padding-right: 30px !important;
+    }
+
+    .call-to-action{
+      padding: 20px 30px;
+      margin-top: 20px;
+    }
+
+    .steps-no{
+      display: none;
+    }
+
+    .steps-text{
+      width: 100%;
+    }
+
+    .step-text-title{
+      line-height: 33px;
+    }
+
+    .customer-logo-area{
+      /*display: none;*/
+      display: inline-block;
+      width: 100% !important;
+      margin-bottom: 10px;
+    }
+
+    .pycard{
+        padding: 20px 0px !important;
+    }
+
+    .nomobile{
+        display: none !important;
+    }
+
+    .column p {
+      font-size: 1em;
+      line-height: 24px;
+    }
+
+    .viz-area{
+      margin-bottom: 30px;
+    }
+
+    .item{
+      width: 33%;
+      font-size: 12px;
+    }
+
+    .build-by{
+      text-align: center !important;
+    }
+}

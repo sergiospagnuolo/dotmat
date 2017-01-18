@@ -16,7 +16,6 @@
     <meta name="twitter:image" content="https://pykih.github.io/dot-mat/img/publish_img_twitter.png" />
     <meta name="twitter:url" content="https://pykih.github.io/dot-mat" />
 
-
     <meta name='viewport' content='width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no'>
     <link rel="stylesheet" type="text/css" href="build/semantic.min.css">
     <link rel="stylesheet" type="text/css" href="build/site.css">
@@ -56,22 +55,22 @@
         </p>
         <div class="call-to-action-area">
           <a href="#make-dot-mat">
-            <div class="call-to-action">
-              Make a Dot Mat
-            </div>
+          <div class="call-to-action">
+            Make a Dot Mat
+          </div>
           </a>
         </div>
       </div>
       <br/>
       <br/>
       <div class="ui pointing secondary menu">
-        <a class="item item-1 active" data-tab="third">1. Narratives & Exploratory</a>
-        <a class="item" data-tab="first" href="narrative_only.html">2. Narrative only</a>
+        <a class="item item-1" data-tab="third" href="index.html">1. Narratives & Exploratory</a>
+        <a class="item active" data-tab="first">2. Narrative only</a>
         <a class="item" data-tab="second" href="exploratory_only.html">3. Exploratory only</a>
       </div>
       <div class="viz-area">
         <br/>
-        <div id='chart'></div>
+        <div id='chart-1'></div>
       </div>
       <div class="ui stackable two column grid">
         <div class="column" style="padding-right: 50px;">
@@ -188,60 +187,58 @@
 
       <br/>
       <br/>
+      <div id="fb-root"></div>
 
-    <div id="fb-root"></div>
+      <script type="text/javascript" src="//pym.nprapps.org/pym.v1.min.js"></script>
+      <script>
+        var pymParent1 = new pym.Parent('chart-1', 'https://storage.googleapis.com/g2gcs-hosting-dot-mat-8ddb06e014/index.html?sheet=https://docs.google.com/spreadsheets/d/1kquYJKhEESTKZerEPwyk_HfUCswOMV6RFh2J2ouXsSM/pubhtml', {});
 
-    <script type="text/javascript" src="//pym.nprapps.org/pym.v1.min.js"></script>
+        $("#read_more").click(function(event){
+          $("#one-liner").hide();
+          $("#multi-line").show();
+          event.preventDefault();
+        })
+      </script>
+
+      <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-41985425-1', 'auto');
+        ga('send', 'pageview');
+
+      </script>
+
+      <script>
+        window.twttr = (function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0],
+            t = window.twttr || {};
+          if (d.getElementById(id)) return t;
+          js = d.createElement(s);
+          js.id = id;
+          js.src = "https://platform.twitter.com/widgets.js";
+          fjs.parentNode.insertBefore(js, fjs);
+
+          t._e = [];
+          t.ready = function(f) {
+            t._e.push(f);
+          };
+
+          return t;
+        }(document, "script", "twitter-wjs"));
+      </script>
+
+
     <script>
-      var pymParent = new pym.Parent('chart', 'https://storage.googleapis.com/g2gcs-hosting-dot-mat-8ddb06e014/index.html?sheet=https://docs.google.com/spreadsheets/d/1H28b3a-XhZH8Vjac6pJ9WM95yCBAdpVTCqN80KWpFZE/pubhtml', {})
-
-      $("#read_more").click(function(event){
-        $("#one-liner").hide();
-        $("#multi-line").show();
-        event.preventDefault();
-      })
+      (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";
+      fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
     </script>
-
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-      ga('create', 'UA-41985425-1', 'auto');
-      ga('send', 'pageview');
-
-    </script>
-
-    <script>
-      window.twttr = (function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0],
-          t = window.twttr || {};
-        if (d.getElementById(id)) return t;
-        js = d.createElement(s);
-        js.id = id;
-        js.src = "https://platform.twitter.com/widgets.js";
-        fjs.parentNode.insertBefore(js, fjs);
-
-        t._e = [];
-        t.ready = function(f) {
-          t._e.push(f);
-        };
-
-        return t;
-      }(document, "script", "twitter-wjs"));
-    </script>
-
-
-  <script>
-    (function(d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-    js = d.createElement(s); js.id = id;
-    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";
-    fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));
-  </script>
-
   </body>
 </html>
