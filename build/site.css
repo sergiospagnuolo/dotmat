@@ -172,7 +172,7 @@ h4{
         font-size: 15px;
         font-family: arial, sans-serif;
         width: 100%;
-        overflow: hidden;
+        /*overflow: hidden;*/
     }
 
     h1{
