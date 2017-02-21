@@ -16,7 +16,6 @@
     <meta name="twitter:image" content="https://pykih.github.io/dotmat/img/publish_img_twitter.png" />
     <meta name="twitter:url" content="https://pykih.github.io/dotmat" />
 
-
     <meta name='viewport' content='width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no'>
     <link rel="stylesheet" type="text/css" href="build/semantic.min.css">
     <link rel="stylesheet" type="text/css" href="build/site.css">
@@ -76,21 +75,21 @@
         </p>
         <div class="call-to-action-area">
           <a href="#make-dotmat">
-            <div class="call-to-action">
-              Make a DotMat
-            </div>
+          <div class="call-to-action">
+            Make a DotMat
+          </div>
           </a>
         </div>
       </div>
       <div class="top-extra-space"></div>
       <div class="ui pointing secondary menu">
-        <a class="item item-1 active" data-tab="third">1. Narratives & Exploratory</a>
+        <a class="item item-1" data-tab="third" href="index.html">1. Narratives & Exploratory</a>
         <a class="item" data-tab="first" href="narrative_only.html">2. Narrative only</a>
-        <a class="item" data-tab="second" href="exploratory_only.html">3. Exploratory only</a>
+        <a class="item active" data-tab="second">3. Exploratory only</a>
       </div>
       <div class="viz-area">
         <br/>
-        <div id='chart'></div>
+        <div id='chart-2'></div>
       </div>
       <div class="divider"></div>
       <div class="ui stackable two column grid">
@@ -134,7 +133,7 @@
           <div class="steps-no">1</div>
           <div class="steps-text">
             <div class="step-text-title">
-              Choose a mode
+              Choose a visual type
             </div>
             <ul>
                 <li>Narratives & Exploratory</li>
@@ -148,12 +147,11 @@
             <div class="step-text-title">
               Create your spreadsheet
             </div>
-            <p>Build a new Google Spreadsheet using our <a href='https://docs.google.com/spreadsheets/d/1bWSyigkPU_c1XwC9g6vI7czyQKO7pmWKqUOojIkb5rM/edit?ts=58a1b229#gid=1392655604' target='blank'>template</a>. You'll need to add the template to your own Google Drive account by clicking the "Add to My Drive" option in the file menu. </br> Note: You'll need to sign in to your Google account.</p>
-            <p>The template has 4 sheets - config, narrative, filters and data. For more details, refer <a href='https://github.com/pykih/dotmat/wiki/Configuration-Parameters' target='blank'>technical documentation.</a></p>
+            <p>Build a new Google Spreadsheet by going to your own Google Drive account. Refer our <a href='https://docs.google.com/spreadsheets/d/1H28b3a-XhZH8Vjac6pJ9WM95yCBAdpVTCqN80KWpFZE/pubhtml' target='blank'>template</a>. The template has 4 sheets - config, narrative, filters and data. For more details, refer <a href='https://github.com/pykih/dotmat/wiki/Configuration-Parameters' target='blank'>technical documentation.</a></p>
               <p>
               <ul>
-                <li>If you intend to publish a narrative-only story, then only include config and narrative sheets. (<a href='https://docs.google.com/spreadsheets/d/1kquYJKhEESTKZerEPwyk_HfUCswOMV6RFh2J2ouXsSM/edit#gid=0' target='blank'>template</a>)</li>
-                <li>If you intend to publish an exploratory-only story, then only include config, filters and data sheets. (<a href='https://docs.google.com/spreadsheets/d/13NBIEAbrKzK7PDe84MEVnVL3gYzREpHQKzJzA08k114/edit?ts=58a1bcad#gid=167492542' target='blank'>template</a>)</li>
+                <li>If you intend to publish a narrative-only story, then only include config and narrative sheets. (<a href='https://docs.google.com/spreadsheets/d/1kquYJKhEESTKZerEPwyk_HfUCswOMV6RFh2J2ouXsSM/pubhtml' target='blank'>link</a>)</li>
+                <li>If you intend to publish an exploratory-only story, then only include config, filters and data sheets. (<a href='https://docs.google.com/spreadsheets/d/13NBIEAbrKzK7PDe84MEVnVL3gYzREpHQKzJzA08k114/pubhtml' target='blank'>link</a>)</li>
                 <li>If you intend to publish a both story, then include all 4 sheets.</li>
               </ul>
               <p>Note:</p>
@@ -192,6 +190,7 @@
                     metaTag.name = "viewport";
                     metaTag.content = "width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no";
                     document.getElementsByTagName('head')[0].appendChild(metaTag);
+
                     var pymParent = new pym.Parent ( 'dotmat', 'https://storage.googleapis.com/g2gcs-hosting-dotmat-8ddb06e014/index.html?sheet=https://docs.google.com/spreadsheets/d/1H28b3a-XhZH8Vjac6pJ9WM95yCBAdpVTCqN80KWpFZE/pubhtml', {});
                 </script>
             </textarea>
@@ -199,26 +198,6 @@
         </div>
         <div class="column two wide"></div>
       </div>
-      <br>
-      <br>
-      <div class="examples-area">
-        <div class="examples-title">
-          Examples
-        </div>
-        <br>
-        <div class="single-expamle col-sm-3">
-          <div class="example-img">
-            <a href="http://www.indiaspend.com/cover-story/5-days-to-polls-more-support-for-bjp-but-40-of-uttar-pradesh-voters-undecided-24496"><img src="example.png" width="100%;"></a>
-          </div>
-          <div class="example-company">
-            <img src="img/client_logo/Indiaspend.png" width="150px">
-          </div>
-          <div class="example-link">
-            <a href="http://www.indiaspend.com/cover-story/5-days-to-polls-more-support-for-bjp-but-40-of-uttar-pradesh-voters-undecided-24496" target="blank">40% Uttar Pradesh Voters Undecided</a>
-          </div>
-        </div>
-      </div>
-
       <div class="ui grid" style="padding: 0px;">
         <div class="column">
             <p class="build-by" style="text-align: right;">
@@ -229,69 +208,58 @@
 
       <br/>
       <br/>
+      <div id="fb-root"></div>
 
-    <div id="fb-root"></div>
+      <script type="text/javascript" src="//pym.nprapps.org/pym.v1.min.js"></script>
+      <script>
+        var pymParent2 = new pym.Parent('chart-2', 'https://storage.googleapis.com/g2gcs-hosting-dotmat-8ddb06e014/index.html?sheet=https://docs.google.com/spreadsheets/d/13NBIEAbrKzK7PDe84MEVnVL3gYzREpHQKzJzA08k114/pubhtml', {});
 
-    <script type="text/javascript" src="//pym.nprapps.org/pym.v1.min.js"></script>
+        $("#read_more").click(function(event){
+          $("#one-liner").hide();
+          $("#multi-line").show();
+          event.preventDefault();
+        })
+      </script>
+
+      <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-41985425-1', 'auto');
+        ga('send', 'pageview');
+
+      </script>
+
+      <script>
+        window.twttr = (function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0],
+            t = window.twttr || {};
+          if (d.getElementById(id)) return t;
+          js = d.createElement(s);
+          js.id = id;
+          js.src = "https://platform.twitter.com/widgets.js";
+          fjs.parentNode.insertBefore(js, fjs);
+
+          t._e = [];
+          t.ready = function(f) {
+            t._e.push(f);
+          };
+
+          return t;
+        }(document, "script", "twitter-wjs"));
+      </script>
+
+
     <script>
-      var pymParent = new pym.Parent('chart', 'https://storage.googleapis.com/g2gcs-hosting-dotmat-8ddb06e014/index.html?sheet=https://docs.google.com/spreadsheets/d/1H28b3a-XhZH8Vjac6pJ9WM95yCBAdpVTCqN80KWpFZE/pubhtml', {})
-
-      $("#read_more").click(function(event){
-        $("#one-liner").hide();
-        $("#multi-line").show();
-        event.preventDefault();
-      })
+      (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";
+      fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
     </script>
-
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-      ga('create', 'UA-41985425-1', 'auto');
-      ga('send', 'pageview');
-
-    </script>
-
-    <script>
-      window.twttr = (function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0],
-          t = window.twttr || {};
-        if (d.getElementById(id)) return t;
-        js = d.createElement(s);
-        js.id = id;
-        js.src = "https://platform.twitter.com/widgets.js";
-        fjs.parentNode.insertBefore(js, fjs);
-
-        t._e = [];
-        t.ready = function(f) {
-          t._e.push(f);
-        };
-
-        return t;
-      }(document, "script", "twitter-wjs"));
-    </script>
-
-
-  <script>
-    (function(d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-    js = d.createElement(s); js.id = id;
-    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";
-    fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));
-  </script>
-
-    <div id='main' height="auto">
-      <div id='filter-container'></div>
-      <div id='total-number'></div>
-      <div id='chart_container'>
-        <div id='step-container'></div>
-      </div>
-      <div id='story-container'></div>
-    </div>
-    <script type="text/javascript" src="./js/dotmat.min.js"></script>
   </body>
 </html>
