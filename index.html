@@ -84,9 +84,10 @@
       </div>
       <div class="top-extra-space"></div>
       <div class="ui pointing secondary menu">
-        <a class="item item-1 active" data-tab="third">1. Narratives & Exploratory</a>
+        <a class="item item-1 active" data-tab="fourth" href="index.html">1. Narrative & Exploratory</a>
         <a class="item" data-tab="first" href="narrative_only.html">2. Narrative only</a>
         <a class="item" data-tab="second" href="exploratory_only.html">3. Exploratory only</a>
+        <a class="item" data-tab="third" href="video_narrative.html">4. Video Narrative</a>
       </div>
       <div class="viz-area">
         <br/>
@@ -121,6 +122,8 @@
           <span class="tip-no">2.</span><span class="tip-text"><p>Pick stories where you are showing proportions of countable entities e.g. people, companies, etc.</p></span>
           <div class="clear-fix"></div>
           <span class="tip-no">3.</span><span class="tip-text"><p>Use exploratory mode if you want to allow readers to explore raw data and discover insights themselves.</p></span>
+          <div class="clear-fix"></div>
+          <span class="tip-no">4.</span><span class="tip-text"><p>Use data which has absolute values. Using percentage data (i.e plotting 100 points where one point represents one percent) is not the ideal way to use this chart.</p></span>
         </div>
       </div>
       <br/>
@@ -137,7 +140,7 @@
               Choose a mode
             </div>
             <ul>
-                <li>Narratives & Exploratory</li>
+                <li>Narrative & Exploratory</li>
                 <li>Narrative only</li>
                 <li>Exploratory only</li>
             </ul>
@@ -317,14 +320,5 @@
     fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));
   </script>
-
-    <div id='main' height="auto">
-      <div id='filter-container'></div>
-      <div id='total-number'></div>
-      <div id='chart_container'></div>
-      <div id='step-container'></div>
-       <div id='story-container'></div>
-    </div>
-    <script type="text/javascript" src="./js/dotmat.min.js"></script>
   </body>
 </html>
